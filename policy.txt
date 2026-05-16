@@ -1,0 +1,54 @@
+Privacy Policy — Vowel Space Lab
+Effective date: May 15, 2026
+Developer: Efai De Leon
+Contact: abelefai@gmail.com
+
+Overview
+Vowel Space Lab is a speech analysis tool that records your voice, extracts acoustic features (formants, pitch, spectrogram), and visualizes them on your device. This policy explains exactly what data the app touches and what happens to it.
+Short version: Everything stays on your device. We collect nothing. We store nothing. We transmit nothing.
+
+1. Data We Collect
+We collect no personal data.
+The app does not collect, store, transmit, or share any information about you or your device.
+
+2. Microphone Access
+The app requests access to your microphone solely to record your voice for acoustic analysis. Microphone access is used only when you explicitly tap the Record button.
+
+Audio is captured using Apple's AVFoundation framework.
+Audio data is processed entirely on your device in real time.
+No audio recording is ever written to disk, uploaded to a server, or shared with any third party.
+Audio held in memory is discarded immediately when you tap Clear, start a new recording, or close the app.
+
+You can revoke microphone access at any time in Settings → Privacy & Security → Microphone.
+
+3. Audio Files You Load
+If you choose to load an audio file from your device using the Load from Files feature, that file is read into memory for analysis only. It is never copied, transmitted, or stored by the app beyond your current session.
+
+4. On-Device Processing
+All signal processing — including Fast Fourier Transform (FFT) analysis, Linear Predictive Coding (LPC) formant extraction, fundamental frequency (F0) estimation, and vowel space visualization — runs entirely on your device using Apple's Accelerate and AVFoundation frameworks.
+The app has no network capability and makes no outbound connections of any kind.
+
+5. Data Sharing
+We do not share any data with third parties because we do not collect any data to share. The app contains no:
+
+Analytics SDKs (e.g., Firebase, Mixpanel)
+Advertising SDKs
+Crash reporting services
+Social media integrations
+Third-party frameworks of any kind beyond Apple's own system frameworks
+
+
+6. Data Retention
+Because no data is stored, there is nothing to retain or delete. All audio and analysis results exist only in device RAM during your active session and are released when the session ends.
+
+7. Children's Privacy
+Vowel Space Lab does not collect personal information from anyone, including children under the age of 13 (or the applicable age in your jurisdiction). The app is safe for use by children subject to parental supervision of microphone access.
+
+8. Your Rights (GDPR / CCPA)
+Because we collect no personal data, there is no personal data to access, correct, export, or delete. If you are an EU resident (GDPR) or California resident (CCPA) and have questions about how this aligns with your rights, please contact us at the address below — we are happy to confirm in writing that no data about you exists in our systems.
+
+9. Security
+Since no data leaves your device, there is no server-side data at risk. On-device data is protected by iOS's standard memory and sandboxing protections.
+
+10. Changes to This Policy
+If we update this policy, we will revise the effective date above and, where appropriate, notify users through the App Store update notes. Continued use of the app after changes constitutes acceptance of the updated policy.
