@@ -21,6 +21,76 @@ body {
     #090b12;
 }
 
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background: rgba(9, 11, 18, 0.95);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.navbar-container {
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 16px 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar-brand {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+.navbar-logo {
+  height: 40px;
+  width: auto;
+  transition: opacity 180ms ease;
+}
+
+.navbar-logo:hover {
+  opacity: 0.8;
+}
+
+.navbar-menu {
+  display: flex;
+  gap: 32px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.navbar-link {
+  color: #d7dbe8;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 0.95rem;
+  transition: color 180ms ease;
+  position: relative;
+}
+
+.navbar-link:hover {
+  color: #ffffff;
+}
+
+.navbar-link.active {
+  color: #7db8ff;
+}
+
+.navbar-link.active::after {
+  content: '';
+  position: absolute;
+  bottom: -8px;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: #7db8ff;
+  border-radius: 1px;
+}
+
 .page-shell {
   max-width: 1080px;
   margin: 0 auto;
@@ -150,6 +220,12 @@ body {
   font-size: 0.95rem;
 }
 
+.hero-footer {
+  text-align: center;
+  padding: 32px 0;
+  color: #d7dbe8;
+}
+
 .section {
   padding: 44px 0;
 }
@@ -241,5 +317,13 @@ body {
 
   .button {
     width: 100%;
+  }
+
+  .navbar-menu {
+    gap: 16px;
+  }
+
+  .navbar-link {
+    font-size: 0.85rem;
   }
 }

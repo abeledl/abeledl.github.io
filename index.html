@@ -7,6 +7,19 @@
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
+  <nav class="navbar">
+    <div class="navbar-container">
+      <a href="index.html" class="navbar-brand">
+        <img src="vaqaleslogo3.png" alt="Vowel Space Audio Extractor" class="navbar-logo" />
+      </a>
+      <ul class="navbar-menu">
+        <li><a href="index.html" class="navbar-link active">Home</a></li>
+        <li><a href="about.html" class="navbar-link">About</a></li>
+        <li><a href="privacy.html" class="navbar-link">Privacy</a></li>
+      </ul>
+    </div>
+  </nav>
+
   <div class="page-shell">
     <header class="hero">
       <div class="hero-content">
@@ -16,8 +29,8 @@
           Extract formants from audio files or recordings and map them into a vowel space. Everything runs locally in your browser—no servers, no storage, no user data collection.
         </p>
         <div class="hero-actions">
-          <a class="button button-primary" href="#what-it-does">Learn More</a>
-          <a class="button button-secondary" href="#privacy">Privacy First</a>
+          <a class="button button-primary" href="about.html">Learn More</a>
+          <a class="button button-secondary" href="privacy.html">Privacy First</a>
         </div>
       </div>
       <div class="hero-visual">
@@ -36,84 +49,8 @@
       </div>
     </header>
 
-    <main>
-      <section id="what-it-does" class="section section-alt">
-        <div class="section-intro">
-          <p class="section-eyebrow">What this app does</p>
-          <h2>Extracts audio formants and shows their position in a vowel space</h2>
-          <p>
-            Record or upload audio, then see where the extracted formants land in a vowel chart. This is ideal for linguistics practice, phonetics exploration, and private acoustic analysis.
-          </p>
-        </div>
-
-        <div class="feature-grid">
-          <article class="feature-card">
-            <h3>Audio formant extraction</h3>
-            <p>Analyze vowel sounds and extract formant frequencies from recordings or audio files.</p>
-          </article>
-          <article class="feature-card">
-            <h3>Vowel space mapping</h3>
-            <p>Visualize formant values in a classic vowel space layout for quick comparison and insight.</p>
-          </article>
-          <article class="feature-card">
-            <h3>Offline processing</h3>
-            <p>All computation happens locally in your browser. Nothing is uploaded or stored remotely.</p>
-          </article>
-        </div>
-      </section>
-
-      <section id="privacy" class="section">
-        <div class="section-intro">
-          <p class="section-eyebrow">Privacy guarantees</p>
-          <h2>No data leaves your device</h2>
-          <p>
-            Your recordings, audio files, and analysis remain on your machine. The app does not send any information to servers, and it does not retain personal data.
-          </p>
-        </div>
-
-        <div class="privacy-list">
-          <div class="privacy-item">
-            <h3>Offline-only functionality</h3>
-            <p>Everything is designed to work without an internet connection once the site is loaded.</p>
-          </div>
-          <div class="privacy-item">
-            <h3>No user tracking</h3>
-            <p>There are no analytics, no tracking scripts, and no data collection mechanisms.</p>
-          </div>
-          <div class="privacy-item">
-            <h3>Local review and control</h3>
-            <p>You decide when and how to use the app; no external service has access to your audio.</p>
-          </div>
-        </div>
-      </section>
-
-      <section class="section section-alt" id="how-it-works">
-        <div class="section-intro">
-          <p class="section-eyebrow">How it works</p>
-          <h2>Simple steps to analyze vowel quality</h2>
-          <p>
-            Use the app to load an audio file or record directly. The analysis extracts the primary formants and places them into a visual vowel coordinate system.
-          </p>
-        </div>
-
-        <div class="steps-grid">
-          <div class="step-card">
-            <strong>1</strong>
-            <h4>Upload or record</h4>
-            <p>Select a voice sample from your device or use the recording interface.</p>
-          </div>
-          <div class="step-card">
-            <strong>2</strong>
-            <h4>Analyze</h4>
-            <p>The app extracts formant frequencies and computes their position in the vowel space.</p>
-          </div>
-          <div class="step-card">
-            <strong>3</strong>
-            <h4>Explore</h4>
-            <p>See how your sound compares with common vowel targets and learn from the visual results.</p>
-          </div>
-        </div>
-      </section>
+    <main class="hero-footer">
+      <p>Explore the app, learn about how it works, and understand our privacy-first approach.</p>
     </main>
 
     <footer class="footer">
