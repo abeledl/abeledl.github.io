@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', function () {
   const footer = document.querySelector('.footer');
   if (footer) {
     const meta = document.createElement('p');
-    meta.textContent = `Offline-ready website generated on ${now.toLocaleDateString()}.`;
+    meta.textContent = ``;
     footer.appendChild(meta);
   }
 });

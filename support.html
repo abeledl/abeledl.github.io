@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Support & FAQ - Vowel Space Audio Extractor</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <nav class="navbar">
+    <div class="navbar-container">
+      <a href="index.html" class="navbar-brand">
+        <img src="vaqaleslogo3.png" alt="Vowel Space Audio Extractor" class="navbar-logo" />
+      </a>
+      <ul class="navbar-menu">
+        <li><a href="index.html" class="navbar-link">Home</a></li>
+        <li><a href="about.html" class="navbar-link">About</a></li>
+        <li><a href="privacy.html" class="navbar-link">Privacy</a></li>
+        <li><a href="support.html" class="navbar-link active">Support</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="page-shell">
+    <main>
+      <section class="section">
+        <div class="section-intro">
+          <p class="section-eyebrow">Help & FAQ</p>
+          <h1>Frequently Asked Questions</h1>
+          <p>Find answers to common questions about using Vowel Space Lab.</p>
+        </div>
+      </section>
+
+      <section class="faq-section">
+        <div class="faq-item">
+          <h3>How long can I record for?</h3>
+          <p>Up to 30 seconds per recording. For vowel analysis you rarely need more than a few seconds — a sustained vowel for 2–3 seconds gives the analyzer plenty of material to work with.</p>
+        </div>
+
+        <div class="faq-item">
+          <h3>Do I need to say a specific word?</h3>
+          <p>For the vowel space chart, sustained vowel sounds work best — hold a single vowel sound for 2–3 seconds rather than speaking full words or sentences. For the spectrogram, natural speech is fine and often more interesting to explore.</p>
+        </div>
+
+        <div class="faq-item">
+          <h3>How close should I hold the phone?</h3>
+          <p>Really close.</p>
+        </div>
+
+        <div class="faq-item">
+          <h3>Why does my recording show very few or no formant dots?</h3>
+          <p>A few possible causes. First, check that you are actually producing voiced sounds — whispering, for example, produces no formants. Second, the voice threshold setting may be too high for your recording level; try lowering it from 0.03 to 0.01. Third, if there is a lot of background noise the analyzer may be rejecting frames — try recording somewhere quieter.</p>
+        </div>
+
+        <div class="faq-item">
+          <h3>Why do the formant dots jump around erratically?</h3>
+          <p>Some variation is normal, especially at the start and end of a sound. If it seems excessive, try increasing the Smoothing setting (0.4 to 0.6) or the LPC Window from 45ms to 55ms. Both reduce jitter at the cost of some temporal precision.</p>
+        </div>
+
+        <div class="faq-item">
+          <h3>What do the selection handles do?</h3>
+          <p>Dragging the left and right handles narrows the time range that is used for the vowel space chart and the readout strip at the top. This lets you isolate a specific moment — for example, the steady middle portion of a vowel — and exclude transitions at the start and end.</p>
+        </div>
+
+        <div class="faq-item">
+          <h3>The spectrogram looks very washed out or very dark. How do I fix it?</h3>
+          <p>Use the Contrast setting in the Color & Overlays panel. High contrast makes quiet detail more visible; Low contrast is better if the image looks blown out. If the colour scheme itself is the issue, Heatmap and Dark Glow tend to work well for most recordings; Arctic and Monochrome are better in bright lighting conditions.</p>
+        </div>
+
+        <div class="faq-item">
+          <h3>Can I export the spectrogram as an image?</h3>
+          <p>Not in the current version. You can use iOS's built-in screenshot function (side button + volume up) to capture it.</p>
+        </div>
+
+        <div class="faq-item">
+          <h3>The Play button does not produce any sound.</h3>
+          <p>Another app may have the audio session. Try closing other audio apps and tapping play again. Also check that your phone is not in silent mode.</p>
+        </div>
+
+        <div class="faq-item">
+          <h3>The app asked for microphone permission and I accidentally denied it.</h3>
+          <p>Go to Settings → Privacy & Security → Microphone, find Vowel Space Lab, and enable it. The app cannot record without this permission.</p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>Vowel Space Audio Extractor • Offline by design • No data is stored or shared.</p>
+      <p>Designed for secure local use and private phonetic exploration.</p>
+    </footer>
+  </div>
+
+</body>
+</html>
