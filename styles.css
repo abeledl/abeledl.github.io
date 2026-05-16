@@ -1,0 +1,245 @@
+:root {
+  color-scheme: dark;
+  color: #f5f7fb;
+  background: #090b12;
+  font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  line-height: 1.6;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  min-height: 100%;
+}
+
+body {
+  background: radial-gradient(circle at top left, rgba(55, 118, 255, 0.18), transparent 32%),
+    radial-gradient(circle at bottom right, rgba(0, 210, 255, 0.12), transparent 24%),
+    #090b12;
+}
+
+.page-shell {
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 32px 24px 48px;
+}
+
+.hero {
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  gap: 32px;
+  align-items: center;
+  padding: 48px 0 32px;
+}
+
+.eyebrow,
+.section-eyebrow {
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  color: #7db8ff;
+  font-size: 0.8rem;
+  margin: 0 0 16px;
+}
+
+.hero-content h1,
+.section-intro h2 {
+  margin: 0;
+  font-size: clamp(2.5rem, 2.8vw, 3.8rem);
+  line-height: 0.98;
+  letter-spacing: -0.05em;
+}
+
+.hero-copy,
+.section-intro p,
+.footer p,
+.feature-card p,
+.privacy-item p,
+.step-card p,
+.visual-note {
+  color: #d7dbe8;
+}
+
+.hero-copy {
+  max-width: 34rem;
+  margin: 24px 0 0;
+  font-size: 1.1rem;
+}
+
+.hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  margin-top: 32px;
+}
+
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 46px;
+  border-radius: 999px;
+  padding: 0 22px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: transform 180ms ease, box-shadow 180ms ease, background-color 180ms ease;
+}
+
+.button:hover,
+.button:focus-visible {
+  transform: translateY(-1px);
+}
+
+.button-primary {
+  color: #ffffff;
+  background: linear-gradient(135deg, #4f8bff 0%, #4257ff 100%);
+  box-shadow: 0 16px 40px rgba(15, 45, 101, 0.22);
+}
+
+.button-secondary {
+  color: #cfe0ff;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.14);
+}
+
+.hero-visual {
+  display: flex;
+  justify-content: center;
+}
+
+.visual-card {
+  width: min(100%, 100%);
+  max-width: 420px;
+  padding: 28px;
+  border-radius: 32px;
+  background: rgba(12, 17, 33, 0.9);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow: 0 24px 70px rgba(0, 0, 0, 0.32);
+}
+
+.visual-title {
+  margin: 0 0 20px;
+  font-size: 1rem;
+  color: #8abfff;
+  letter-spacing: 0.06em;
+}
+
+.visual-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 14px;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.03);
+  border-radius: 20px;
+}
+
+.visual-grid span {
+  display: inline-flex;
+  min-height: 56px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.04);
+  font-weight: 600;
+}
+
+.visual-note {
+  margin-top: 18px;
+  font-size: 0.95rem;
+}
+
+.section {
+  padding: 44px 0;
+}
+
+.section-alt {
+  background: rgba(255, 255, 255, 0.02);
+  border-radius: 32px;
+  padding: 44px 32px;
+  margin-top: 32px;
+}
+
+.section-intro {
+  max-width: 720px;
+}
+
+.feature-grid,
+.steps-grid,
+.privacy-list {
+  display: grid;
+  gap: 20px;
+  margin-top: 28px;
+}
+
+.feature-grid,
+.privacy-list {
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+}
+
+.step-card,
+.feature-card,
+.privacy-item {
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.07);
+  border-radius: 24px;
+  padding: 24px;
+}
+
+.step-card {
+  text-align: center;
+}
+
+.step-card strong {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 54px;
+  height: 54px;
+  margin-bottom: 18px;
+  border-radius: 18px;
+  font-size: 1.25rem;
+  background: linear-gradient(135deg, rgba(79, 139, 255, 0.16), rgba(66, 87, 255, 0.16));
+  color: #cfe0ff;
+}
+
+.step-card h4,
+.feature-card h3,
+.privacy-item h3 {
+  margin: 0 0 12px;
+  font-size: 1.1rem;
+}
+
+.footer {
+  margin-top: 44px;
+  padding-top: 24px;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  color: #9fb6dc;
+  font-size: 0.95rem;
+}
+
+@media (max-width: 860px) {
+  .hero {
+    grid-template-columns: 1fr;
+    padding-top: 32px;
+  }
+
+  .hero-visual {
+    justify-content: stretch;
+  }
+}
+
+@media (max-width: 620px) {
+  .page-shell {
+    padding: 24px 16px 32px;
+  }
+
+  .hero-copy {
+    font-size: 1rem;
+  }
+
+  .button {
+    width: 100%;
+  }
+}
