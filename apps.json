@@ -1,0 +1,40 @@
+[
+  {
+    "id": "voqales",
+    "name": "Voqales",
+    "description": "Offline vowel space audio analysis with local formant extraction, plotting, and privacy-first design.",
+    "logo": "logos/voqaleslogo3.png",
+    "mainPage": "voqales/voqales-main.html",
+    "aboutPage": "voqales/voqales-about.html",
+    "privacyPage": "voqales/voqales-privacy.html",
+    "supportPage": "voqales/voqales-support.html"
+  },
+  {
+    "id": "dummy-one",
+    "name": "Sample Studio",
+    "description": "A placeholder app card reserved for an upcoming portfolio launch.",
+    "logo": "sampleapp.png",
+    "mainPage": "#"
+  },
+  {
+    "id": "dummy-two",
+    "name": "Sample Notes",
+    "description": "A dummy app entry using the shared sample logo artwork.",
+    "logo": "sampleapp.png",
+    "mainPage": "#"
+  },
+  {
+    "id": "dummy-three",
+    "name": "Sample Tools",
+    "description": "A compact preview card for a future utility app.",
+    "logo": "sampleapp.png",
+    "mainPage": "#"
+  },
+  {
+    "id": "dummy-four",
+    "name": "Sample Labs",
+    "description": "A temporary app slot ready for the next release.",
+    "logo": "sampleapp.png",
+    "mainPage": "#"
+  }
+]

@@ -3,63 +3,68 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Voqales</title>
+  <title>Voqales Portfolio</title>
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
   <nav class="navbar">
     <div class="navbar-container">
       <a href="index.html" class="navbar-brand">
-        <img src="vaqaleslogo3.png" alt="Vowel Space Audio Extractor" class="navbar-logo" />
+        <img src="profileg.png" alt="Voqales portfolio" class="navbar-logo" />
       </a>
-      <ul class="navbar-menu">
-        <li><a href="index.html" class="navbar-link active">Home</a></li>
-        <li><a href="about.html" class="navbar-link">About</a></li>
-        <li><a href="privacy.html" class="navbar-link">Privacy</a></li>
-        <li><a href="support.html" class="navbar-link">Support</a></li>
-      </ul>
     </div>
   </nav>
 
   <div class="page-shell">
     <header class="hero">
       <div class="hero-content">
-        <p class="eyebrow">Offline audio formant analysis</p>
-        <h1>Vowel Space Audio Extractor</h1>
+        <p class="eyebrow">Apps portfolio</p>
+        <h1>Portfolio</h1>
         <p class="hero-copy">
-          Extract formants from audio files or recordings and map them into a vowel space. Everything runs locally in your browser—no servers, no storage, no user data collection.
+          Discover the app experience, its privacy-first design, and the dedicated pages that support it.
         </p>
         <div class="hero-actions">
-          <a class="button button-primary" href="about.html">Learn More</a>
-          <a class="button button-secondary" href="privacy.html">Privacy First</a>
+          <a class="button button-primary" href="voqales/voqales-main.html">Open Voqales</a>
         </div>
       </div>
       <div class="hero-visual">
         <div class="visual-card">
-          <div class="visual-title">Formant plot</div>
+          <div class="visual-title">Featured app</div>
           <div class="visual-grid">
-            <span>F1</span>
-            <span>F2</span>
-            <span>æ</span>
-            <span>i</span>
-            <span>u</span>
-            <span>ɔ</span>
+            <span>Formant</span>
+            <span>Vowel</span>
+            <span>Offline</span>
+            <span>Privacy</span>
+            <span>Support</span>
+            <span>Local</span>
           </div>
-          <div class="visual-note">Local analysis and vowel space preview.</div>
+          <div class="visual-note">One app today, with room to grow.</div>
         </div>
       </div>
     </header>
 
-    <main class="hero-footer">
-      <p>Explore the app, learn about how it works, and understand our privacy-first approach.</p>
+    <main>
+      <section class="section">
+        <div class="section-intro">
+          <p class="section-eyebrow">Available apps</p>
+          <h2>Explore every app from one homepage</h2>
+          <p>Click any app card to open a dedicated app page, read the privacy policy, or browse support resources.</p>
+        </div>
+
+        <div id="app-gallery" class="feature-grid">
+          <article class="feature-card">
+            <h3>Loading apps...</h3>
+            <p>Please wait while the portfolio loads.</p>
+          </article>
+        </div>
+      </section>
     </main>
 
     <footer class="footer">
-      <p>Vowel Space Audio Extractor • Offline by design • No data is stored or shared.</p>
-      <p>Designed for secure local use and private phonetic exploration.</p>
+      <p>One app today.</p>
     </footer>
   </div>
 
-
+  <script src="script.js"></script>
 </body>
 </html>
